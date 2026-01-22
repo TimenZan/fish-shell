@@ -233,6 +233,7 @@ def parse_color(comps):
     bold = False
     underline = None
     italics = False
+    strikethrough = False
     dim = False
     reverse = False
     i = 0
@@ -255,6 +256,8 @@ def parse_color(comps):
         elif comp == "--dim" or comp == "-d":
             dim = True
         elif comp == "--reverse" or comp == "-r":
+            reverse = True
+        elif comp == "--strikethrough" or comp == "-s":
             reverse = True
         elif comp.startswith("--theme="):
             pass  # Not yet supported here.

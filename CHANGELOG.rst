@@ -19,6 +19,7 @@ New or improved bindings
 
 Improved terminal support
 -------------------------
+- Support strikethrough (``--strikethrough`` or ``-s``) modifier on `set_color`.
 
 For distributors and developers
 -------------------------------
